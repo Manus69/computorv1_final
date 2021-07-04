@@ -1,6 +1,6 @@
 module solvers;
 
-import sqrt;
+import my_sqrt;
 import my_exception;
 import complex;
 import support;
@@ -73,9 +73,12 @@ Complex[] solve_quadratic_eqn(double[] coefficients)
     }
     else
     {
-        root = new Complex(-coefficients[1] / (2 * coefficients[2]), my_sqrt(-1 * discriminant) / (2 * coefficients[2]));
+        root = new Complex(-coefficients[1] / (2 * coefficients[2]),
+            my_sqrt(-1 * discriminant) / (2 * coefficients[2]));
         roots ~= root;
-        root = new Complex(-coefficients[1] / (2 * coefficients[2]), -my_sqrt(-1 * discriminant) / (2 * coefficients[2]));
+        
+        root = new Complex(-coefficients[1] / (2 * coefficients[2]),
+            -my_sqrt(-1 * discriminant) / (2 * coefficients[2]));
         roots ~= root;
     }
 

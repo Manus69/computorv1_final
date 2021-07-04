@@ -31,7 +31,6 @@ void my_throw(ErrorType type, string extra_message = "")
     throw new MyException(get_message(type, extra_message));
 }
 
-
 class MyException : Exception
 {
     this(string msg)

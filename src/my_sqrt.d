@@ -1,4 +1,4 @@
-module sqrt;
+module my_sqrt;
 
 import support;
 

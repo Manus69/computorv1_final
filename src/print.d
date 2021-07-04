@@ -72,7 +72,6 @@ void print_roots(Complex[] roots)
             separator = ", ";
         }
         write("]");
-
     }
 }
 
@@ -81,7 +80,6 @@ void print_info(Polynomial p)
     writeln("Degree: ", p.get_degree());
 }
 
-//this is fucked up
 int print_term(double value, char symbol, uint degree, int term_count)
 {
     if (value < 0)

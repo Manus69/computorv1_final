@@ -5,7 +5,6 @@ import complex;
 import solvers;
 import numeric_solvers;
 
-
 class Polynomial
 {
     private double[] _coefficients;
